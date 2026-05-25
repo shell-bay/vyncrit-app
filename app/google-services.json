@@ -7,20 +7,30 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:742011158230:android:YOUR_ANDROID_APP_HASH",
+        "mobilesdk_app_id": "1:742011158230:android:ee141ed8bab501d0721377",
         "android_client_info": {
-          "package_name": "com.vyncrit.app"
+          "package_name": "Com.vyncrit.app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "742011158230-9bv3spvn79c6as4j14r0u59rsocoojqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyB43NQ8Y_BCjZcHDN_PjgtnAbXDaXc5m3E"
+          "current_key": "AIzaSyC9FzHs5G0Bwr7eGrXG0mD9BW7MO8eMSns"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742011158230-9bv3spvn79c6as4j14r0u59rsocoojqj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
