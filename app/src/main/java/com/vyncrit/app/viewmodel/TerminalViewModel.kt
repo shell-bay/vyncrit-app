@@ -2,9 +2,9 @@ package com.vyncrit.app.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vyncrit.app.data.build.BuildLog
 import com.vyncrit.app.data.build.BuildServerClient
-import com.vyncrit.app.data.build.LogLevel
+import com.vyncrit.app.data.project.BuildLog
+import com.vyncrit.app.data.project.LogLevel
 import com.vyncrit.app.data.project.ProjectRepository
 import com.vyncrit.app.data.project.ProjectStatus
 import dagger.hilt.android.lifecycle.HiltViewModel

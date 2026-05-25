@@ -50,7 +50,8 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.vyncrit.app.data.build.LogLevel
+import com.vyncrit.app.data.project.BuildLog
+import com.vyncrit.app.data.project.LogLevel
 import com.vyncrit.app.ui.theme.BuildError
 import com.vyncrit.app.ui.theme.BuildInfo
 import com.vyncrit.app.ui.theme.BuildSuccess
