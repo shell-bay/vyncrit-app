@@ -18,8 +18,12 @@ jobs:
 
       - name: Regenerate Gradle wrapper
         run: |
-          rm -rf gradle/wrapper/gradle-wrapper.jar gradlew gradlew.bat
+          mkdir -p /tmp/wrapper-gen
+          cd /tmp/wrapper-gen
           gradle wrapper --gradle-version 8.9
+          cp gradlew gradlew.bat $GITHUB_WORKSPACE/
+          mkdir -p $GITHUB_WORKSPACE/gradle/wrapper
+          cp gradle/wrapper/gradle-wrapper.jar $GITHUB_WORKSPACE/gradle/wrapper/
 
       - name: Build debug APK
         run: ./gradlew assembleDebug
