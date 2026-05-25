@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:742011158230:android:ee141ed8bab501d0721377",
+        "mobilesdk_app_id": "1:742011158230:android:e1f9f6ddb09b099b721377",
         "android_client_info": {
-          "package_name": "Com.vyncrit.app"
+          "package_name": "com.vyncrit.app"
         }
       },
       "oauth_client": [
