@@ -12,9 +12,6 @@ pluginManagement {
     }
 }
 
-plugins {
-    id("com.google.devtools.ksp") version "2.1.0-1.0.29" apply false
-}
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
