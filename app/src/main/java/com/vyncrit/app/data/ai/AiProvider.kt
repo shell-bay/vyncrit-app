@@ -66,7 +66,7 @@ interface AiProvider {
     ): Result<String>
 
     companion object {
-        const val DEFAULT_SYSTEM_PROMPT = """
+        val DEFAULT_SYSTEM_PROMPT = """
 You are Vyncr.it, an expert Android app builder AI assistant. 
 You help users create professional Android applications using Kotlin and Jetpack Compose.
 Generate complete, production-ready code following Material 3 design guidelines.

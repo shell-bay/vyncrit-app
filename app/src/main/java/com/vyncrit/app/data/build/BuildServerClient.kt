@@ -11,9 +11,10 @@ import io.ktor.http.contentType
 import io.ktor.http.isSuccess
 import io.ktor.websocket.Frame
 import io.ktor.websocket.readText
-import io.ktor.websocket.webSocketSession
+import io.ktor.client.plugins.websocket.webSocket
+import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
@@ -53,19 +54,16 @@ class BuildServerClient @Inject constructor(
         }
     }
 
-    fun streamBuildLogs(sessionId: String, serverUrl: String = DEFAULT_SERVER_URL): Flow<String> = flow {
+    fun streamBuildLogs(sessionId: String, serverUrl: String = DEFAULT_SERVER_URL): Flow<String> = callbackFlow {
         val wsUrl = serverUrl.replace("http", "ws") + "/ws/$sessionId"
-        httpClient.webSocketSession(url = wsUrl).let { session ->
-            try {
-                for (frame in session.incoming) {
-                    if (frame is Frame.Text) {
-                        emit(frame.readText())
-                    }
+        httpClient.webSocket(urlString = wsUrl) {
+            for (frame in incoming) {
+                if (frame is Frame.Text) {
+                    trySend(frame.readText())
                 }
-            } finally {
-                session.close()
             }
         }
+        awaitClose { }
     }
 
     @Serializable
