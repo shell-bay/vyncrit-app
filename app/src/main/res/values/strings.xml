@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Vyncr.it</string>
+    <string name="login_title">Welcome to Vyncr.it</string>
+    <string name="login_subtitle">Create any Android app with AI</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="login_button">Sign In</string>
+    <string name="register_button">Create Account</string>
+    <string name="google_sign_in">Continue with Google</string>
+    <string name="logout">Sign Out</string>
+    <string name="new_project">New Project</string>
+    <string name="project_name">Project Name</string>
+    <string name="package_name">Package Name</string>
+    <string name="description">Description</string>
+    <string name="build_app">Build App</string>
+    <string name="preview_app">Preview</string>
+    <string name="settings">Settings</string>
+    <string name="terminal">Terminal</string>
+    <string name="chat">Chat</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="ai_provider">AI Provider</string>
+    <string name="api_key">API Key</string>
+    <string name="model">Model</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+</resources>

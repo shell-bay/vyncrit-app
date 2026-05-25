@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742011158230",
+    "project_id": "rupeon-organization",
+    "storage_bucket": "rupeon-organization.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742011158230:android:YOUR_ANDROID_APP_HASH",
+        "android_client_info": {
+          "package_name": "com.vyncrit.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB43NQ8Y_BCjZcHDN_PjgtnAbXDaXc5m3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
