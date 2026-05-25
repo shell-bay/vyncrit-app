@@ -16,8 +16,10 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Setup Gradle
-        run: chmod +x gradlew
+      - name: Regenerate Gradle wrapper
+        run: |
+          rm -rf gradle/wrapper/gradle-wrapper.jar gradlew gradlew.bat
+          gradle wrapper --gradle-version 8.9
 
       - name: Build debug APK
         run: ./gradlew assembleDebug
